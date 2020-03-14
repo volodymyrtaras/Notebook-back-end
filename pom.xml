@@ -8,10 +8,10 @@
 		<version>2.2.5.RELEASE</version>
 		<relativePath/>
 	</parent>
-	<groupId>vtaras.own.spring</groupId>
-	<artifactId>crud-app</artifactId>
+	<groupId>vtaras.own</groupId>
+	<artifactId>notebook-back-end</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>crud-app</name>
+	<name>notebook-back-end</name>
 
 	<properties>
 		<java.version>13</java.version>

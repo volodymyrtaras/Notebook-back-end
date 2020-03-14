@@ -1,4 +1,4 @@
-package vtaras.own.spring.crud.app.model;
+package vtaras.own.notebook.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

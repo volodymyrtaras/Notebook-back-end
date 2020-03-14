@@ -1,12 +1,12 @@
-package vtaras.own.spring.crud.app;
+package vtaras.own.notebook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrudAppApplication {
+public class NotebookBackEndApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CrudAppApplication.class, args);
+        SpringApplication.run(NotebookBackEndApplication.class, args);
     }
 }

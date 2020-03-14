@@ -1,4 +1,4 @@
-package vtaras.own.spring.crud.app.controller;
+package vtaras.own.notebook.controller;
 
 import java.util.List;
 import javax.validation.Valid;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import vtaras.own.spring.crud.app.repository.NoteRepository;
-import vtaras.own.spring.crud.app.exception.ResourceNotFoundException;
-import vtaras.own.spring.crud.app.model.Note;
+import vtaras.own.notebook.repository.NoteRepository;
+import vtaras.own.notebook.exception.ResourceNotFoundException;
+import vtaras.own.notebook.model.Note;
 
 @RestController
 @RequestMapping("/")
