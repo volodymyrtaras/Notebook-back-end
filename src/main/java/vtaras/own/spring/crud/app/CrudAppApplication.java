@@ -1,4 +1,4 @@
-package vtaras.own.spring.crudapp;
+package vtaras.own.spring.crud.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

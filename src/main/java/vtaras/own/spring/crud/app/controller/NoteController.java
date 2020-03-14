@@ -1,4 +1,4 @@
-package vtaras.own.spring.crudapp.controller;
+package vtaras.own.spring.crud.app.controller;
 
 import java.util.List;
 import javax.validation.Valid;
@@ -13,18 +13,18 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import vtaras.own.spring.crudapp.exception.ResourceNotFoundException;
-import vtaras.own.spring.crudapp.model.Note;
-import vtaras.own.spring.crudapp.repository.NoteRepository;
+import vtaras.own.spring.crud.app.repository.NoteRepository;
+import vtaras.own.spring.crud.app.exception.ResourceNotFoundException;
+import vtaras.own.spring.crud.app.model.Note;
 
 @RestController
-@RequestMapping("/crud-app")
+@RequestMapping("/")
 public class NoteController {
 
     @Setter(onMethod = @__(@Autowired))
     private NoteRepository noteRepository;
 
-    @PostMapping("/notes")
+    @PostMapping("/notes/update")
     public Note createNote(@Valid @RequestBody Note note) {
         return noteRepository.save(note);
     }
@@ -40,7 +40,7 @@ public class NoteController {
         return ResponseEntity.ok().body(note);
     }
 
-    @PutMapping("/notes/{id}")
+    @PutMapping("/notes/update/{id}")
     public ResponseEntity<Note> updateNote(@PathVariable(name = "id") Long id,
                                            @RequestBody Note updatedNote) throws ResourceNotFoundException {
         Note note = findNote(id);

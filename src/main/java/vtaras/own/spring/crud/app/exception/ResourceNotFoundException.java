@@ -1,4 +1,4 @@
-package vtaras.own.spring.crudapp.exception;
+package vtaras.own.spring.crud.app.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
